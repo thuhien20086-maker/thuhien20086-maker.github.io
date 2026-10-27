@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雷东龙 · 作品集</title>
+<meta name="description" content="我用 AI 做内容、做本地生意，也把重复劳动做成工具。">
+<style>
+  :root{
+    --paper:#f7f3ec; --ink:#1f1b17; --muted:#7b7166; --line:#e3d9c8;
+    --red:#b03a2e; --gold:#a9822f; --card:#fffdf8;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;color:var(--ink);background:
+      radial-gradient(1000px 520px at 88% -8%, rgba(176,58,46,.10), transparent 62%),
+      radial-gradient(800px 460px at 4% 12%, rgba(169,130,47,.10), transparent 60%),
+      var(--paper);
+    font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC",system-ui,sans-serif;
+    line-height:1.75;font-size:16.5px;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:64px 26px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:34px;margin-bottom:46px}
+  .kicker{font-size:12px;letter-spacing:.3em;color:var(--red)}
+  h1{font-family:"Songti SC","Noto Serif SC",serif;font-size:46px;margin:12px 0 6px;letter-spacing:-.5px}
+  .role{color:var(--muted);font-size:15px;margin:0 0 18px}
+  .pitch{font-family:"Songti SC",serif;font-size:22px;line-height:1.6;max-width:640px;margin:0}
+  .pitch em{font-style:normal;color:var(--red)}
+  h2{font-family:"Songti SC",serif;font-size:22px;margin:0 0 18px;display:flex;align-items:baseline;gap:10px}
+  h2 span{font-family:inherit;font-size:12px;letter-spacing:.2em;color:var(--muted);font-weight:400}
+  section{margin:0 0 52px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;transition:.2s;position:relative}
+  .item:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(60,45,30,.08);border-color:#d6c8b2}
+  .item h3{margin:0 0 6px;font-size:17.5px;font-family:"Songti SC",serif}
+  .item .who{font-size:13px;color:var(--gold);letter-spacing:.04em;margin:0 0 8px}
+  .item p{margin:0;font-size:14.8px;color:#443c33}
+  .chip{position:absolute;top:18px;right:18px;font-size:11.5px;letter-spacing:.08em;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:#fff}
+  .chip.live{color:#3f6b45;border-color:#bcd3bf;background:#f1f7f1}
+  .chip.build{color:#8a5a1f;border-color:#e0cba6;background:#fbf5e9}
+  .notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .note{border-left:2px solid var(--red);padding:2px 0 2px 14px;color:#443c33;font-size:15px}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+  .contact dl{display:grid;grid-template-columns:88px 1fr;gap:10px 16px;margin:0}
+  .contact dt{color:var(--muted);font-size:13px;letter-spacing:.08em}
+  .contact dd{margin:0;font-size:15px}
+  .qr{display:block;width:132px;height:132px;image-rendering:pixelated;border:1px solid var(--line);border-radius:10px;background:#fff;padding:8px}
+  .qrnote{display:block;font-size:13px;color:var(--muted);margin-top:7px}
+  .contact .fill{color:#b9aa92;border-bottom:1px dashed #d8c9b2}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding-top:20px;color:var(--muted);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media(max-width:640px){h1{font-size:34px}.pitch{font-size:19px}.wrap{padding:40px 18px 56px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">PORTFOLIO · 2026</div>
+    <h1>雷东龙</h1>
+    <p class="role">一人公司 · 内容与本地生意 · 自己写工具的人</p>
+    <p class="pitch">我做内容和本地生意，顺手把里面<em>重复的部分</em>做成工具——<br>所以你能看到的东西，基本都是我正在用的。</p>
+  </header>
+
+  <section>
+    <h2>正在做的事 <span>IN PRODUCTION</span></h2>
+    <div class="grid">
+
+      <div class="item">
+        <span class="chip live">在跑</span>
+        <h3>乾元阁 · 国风占卜终端</h3>
+        <p class="who">给想认真问一件事的人</p>
+        <p>一台纯语音交互的占卜设备：开口问，它排盘、解卦、给结论。本地跑排盘引擎，不依赖云端，断网也能用。</p>
+      </div>
+
+      <div class="item">
+        <span class="chip live">在跑</span>
+        <h3>吞口播 · 口播自动粗剪</h3>
+        <p class="who">给每天要出镜的人</p>
+        <p>一条口播原片进来，自动去掉停顿和口癖、跳剪、烧好字幕、出报告。把「剪一条 40 分钟」压到几分钟。</p>
+      </div>
+
+      <div class="item">
+        <span class="chip live">在跑</span>
+        <h3>微信收件箱 · 情报管道</h3>
+        <p class="who">给信息过载的人</p>
+        <p>每天把我转发收藏的内容自动抓下来、去重、筛掉噪音，可用的工具直接装好、验证完再报给我。不用我一条条翻。</p>
+      </div>
+
+      <div class="item">
+        <span class="chip build">迭代中</span>
+        <h3>视频号 · AI 剧情带货</h3>
+        <p class="who">给小镇中老年家庭</p>
+        <p>用 AI 生成剧情短片带货，选品集中在 9.9–19.9 的家居厨房日用品，毛利 30% 以上。脚本、分镜、成片一条流水线。</p>
+      </div>
+
+      <div class="item">
+        <span class="chip live">在跑</span>
+        <h3>技途联鑫 · 本地招生运营</h3>
+        <p class="who">给本地职业技能培训</p>
+        <p>抖音本地推投放 + 私信线索承接：建计划、算成本、接住每一条咨询。把人从「刷到」推到「到店」。</p>
+      </div>
+
+      <div class="item">
+        <span class="chip build">迭代中</span>
+        <h3>秦腔 IP · 秦婉儿</h3>
+        <p class="who">给想听老戏的年轻人</p>
+        <p>用 AI 重建秦腔角色的形象与唱段，做年轻化的戏曲内容。坚持原创形象，不克隆任何名家。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>我怎么做事 <span>HOW I WORK</span></h2>
+    <div class="notes">
+      <div class="note">先验证，再投入。想法先做成一页能收到反馈的东西，再谈开发。</div>
+      <div class="note">能自动的绝不手动。重复第三次的动作，就该变成工具。</div>
+      <div class="note">工具自己先用。自己不用、不持续改的东西，不拿给别人。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>联系我 <span>CONTACT</span></h2>
+    <div class="contact">
+      <dl>
+        <dt>微信</dt><dd><img class="qr" src="wx-qr.png" alt="微信二维码"><span class="qrnote">扫码加我（备注「作品集」）</span></dd>
+        <dt>所在地</dt><dd>西安 · 常在外出差</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 雷东龙</span>
+    <span>本站为静态页面 · 所有工具均为自用并持续修改</span>
+  </footer>
+</div>
+</body>
+</html>
